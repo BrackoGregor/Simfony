@@ -1,3 +1,22 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+
+index:
+  path: /welcome
+  controller: App\Controller\WelcomeController::index
+  defaults:
+    template: 'welcome\index.html.twig'
+
+discipline:
+  path: /discipline
+  controller: App\Controller\WelcomeController::discipline
+  defaults:
+    template: 'discipline.html.twig'
+
+rezultati:
+  path: /rezultati
+  controller: App\Controller\WelcomeController::rezultati
+  defaults:
+    template: 'rezultati.html.twig'

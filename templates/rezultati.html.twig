@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <table style="width:100%">
+    <tr>
+        <th>Ime</th>
+        <th>divRank</th>
+        <th>swimTime</th>
+        <th>bikeTime</th>
+        <th>country</th>
+        <th>overall</th>
+    </tr>
+{% for result in results%}
+
+        <tr>
+            <td>{{ result['ime'] }}</td>
+            <td>{{ result['divRank'] }}</td>
+            <td>{{ result['swim'] }}</td>
+            <td>{{ result['bike'] }}</td>
+            <td>{{ result['country'] }}</td>
+            <td>{{ result['overall'] }}</td>
+        </tr>
+
+    {% endfor %}
+    </table>
+{% endblock %}
